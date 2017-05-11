@@ -21,7 +21,7 @@ import weka.core.OptionHandler;
 import weka.core.Utils;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AddClassification;
-import xilodyne.numpy.J2NumPY;
+import xilodyne.util.jnumpy.J2NumPY;
 import xilodyne.util.ArrayUtils;
 import xilodyne.util.G;
 import xilodyne.util.Logger;

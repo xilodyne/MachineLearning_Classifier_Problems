@@ -463,7 +463,7 @@ Instances FilteredTestInstances = Filter.useFilter(TestInstances, filter);
 System.out.println(FilteredTestInstances);
 */
 
-		
+/*		
 	public void doXyTest() {
 		
 		List <String> labelList = new ArrayList<String>(Arrays.asList("Name",">170cm","Eye","Hair"));
@@ -489,6 +489,9 @@ System.out.println(FilteredTestInstances);
 		}
 
 	}
+	*/
+	
+	/*
 	public void doXyWorking2() {
 		log.logln(G.LOG_INFO, "");
 		//read in the data
@@ -589,9 +592,12 @@ System.out.println(FilteredTestInstances);
 		//	System.out.println("wordsTest: " + wordsTest.toString());
 		//	float[] results = nb.predictUsingFeatureNames(wordsTest);
 			}
-
+ 
 
 	}
+	*/
+	
+	
 	public void doXy() {
 		log.logln(G.LOG_INFO, "");
 		//read in the data

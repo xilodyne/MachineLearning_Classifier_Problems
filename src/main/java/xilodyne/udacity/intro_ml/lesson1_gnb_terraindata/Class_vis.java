@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 import mikera.arrayz.INDArray;
 import mikera.arrayz.NDArray;
-import xilodyne.numpy.J2NumPY;
+import xilodyne.util.jnumpy.J2NumPY;
 import xilodyne.util.ArrayUtils;
 import xilodyne.util.G;
 import xilodyne.util.Logger;

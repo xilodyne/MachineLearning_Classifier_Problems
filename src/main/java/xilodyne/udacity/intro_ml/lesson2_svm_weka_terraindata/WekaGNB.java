@@ -21,7 +21,7 @@ import weka.core.OptionHandler;
 import weka.core.Utils;
 import weka.filters.Filter;
 import weka.filters.supervised.attribute.AddClassification;
-import xilodyne.numpy.J2NumPY;
+import xilodyne.util.jnumpy.J2NumPY;
 import xilodyne.util.ArrayUtils;
 import xilodyne.util.G;
 import xilodyne.util.Logger;
@@ -65,8 +65,8 @@ public class WekaGNB {
 	 
 		// Declare the class attribute along with its values
 		alClassVal = new ArrayList<String>();
-		alClassVal.add(WekaClassifiers.sFast);
-		alClassVal.add(WekaClassifiers.sSlow);
+		alClassVal.add(WekaGNB.sFast);
+		alClassVal.add(WekaGNB.sSlow);
 
 		ClassAttribute = new Attribute("classSpeed", alClassVal); 
 
@@ -723,10 +723,10 @@ return predict;
 		 
 		 //System.out.print("x: " + x +"\ty: " + y +"\tclass: ");
 		 if (labels[lblCount] == 0) {
-			 iExample.setValue((Attribute)alWekaAttributes.get(2), WekaClassifiers.sFast);
+			 iExample.setValue((Attribute)alWekaAttributes.get(2), WekaGNB.sFast);
 			 //System.out.println("fast");
 		 } else {
-			 iExample.setValue((Attribute)alWekaAttributes.get(2), WekaClassifiers.sSlow);
+			 iExample.setValue((Attribute)alWekaAttributes.get(2), WekaGNB.sSlow);
 			 //System.out.println("slow");
 		 } 
 		 
@@ -752,7 +752,7 @@ return predict;
 		 iExample.setValue((Attribute)alWekaAttributes.get(0), x);
 		 iExample.setValue((Attribute)alWekaAttributes.get(1), y);
 		 //does it matters what labels are when it is testing data?
-		 iExample.setValue((Attribute)alWekaAttributes.get(2), WekaClassifiers.sFast);
+		 iExample.setValue((Attribute)alWekaAttributes.get(2), WekaGNB.sFast);
 		 	
 		 // add the instance
 		 instancesSet.add(iExample);

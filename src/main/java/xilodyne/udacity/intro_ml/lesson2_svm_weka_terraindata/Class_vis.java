@@ -8,7 +8,7 @@ import java.util.Iterator;
 import mikera.arrayz.INDArray;
 import mikera.arrayz.NDArray;
 import xilodyne.machinelearning.classifier.neural.Perceptron;
-import xilodyne.numpy.J2NumPY;
+import xilodyne.util.jnumpy.J2NumPY;
 import xilodyne.udacity.intro_ml.lesson1_gnb_terraindata.ClassifyNB;
 //import weka.core.Instances;
 //import xilodyne.machinelearning.classifier.GaussianNB;
@@ -81,7 +81,7 @@ public class Class_vis {
 		}
 	}
 
-	
+	/*
 //	public void prettyPicture(Perceptron clf, NDArray features_test, double[] predicted) {
 	public void prettyPicture(WekaClassifiers clf, NDArray features_test, double[] predicted) {
 
@@ -112,7 +112,7 @@ public class Class_vis {
 			scatterPlot.scatter("slow", grade_bkg, bumpy_bkg, new Color(255, 0, 0));
 			
 		}
-
+*/
 	/*
 	 * public void prettyPicture(GaussianNB clf, NDArray features_test, double[]
 	 * predicted) {
